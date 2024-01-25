@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 350px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address {
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+legend {
+  text-align: center;
+}
+#house {
+  width: 30px;
+}
+
+#quantity {
+  width: 50px;
+}

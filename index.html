@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Shirt ordering form</title>
+    <script src="https://cdn.jsdelivr.net/npm/joi-browser@13.4.0/dist/joi-browser.min.js"></script>
+    <script type="module" src="form.js"></script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+    <form action="" method="get" id="myForm">
+      <h1><ins>T-Shirt ordering form</ins></h1>
+      <fieldset>
+        <legend>
+          <ins><strong>Customer Details</strong></ins>
+        </legend>
+
+        <p>
+          <label for="name">First name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter First name..."
+          />
+        </p>
+        <div id="nameError"></div>
+        <p>
+          <label for="name">Last name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter Last name:..."
+          />
+        </p>
+        <div id="nameError"></div>
+        <p>
+          <label for="email">Email address:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter email address..."
+          />
+        </p>
+        <div id="emailError"></div>
+        <p>
+          <label for="contact">Contact number:</label>
+          <input
+            type="tel"
+            name="contact"
+            id="contact"
+            required
+            placeholder="Enter contact number..."
+          />
+        </p>
+        <div id="contactError"></div>
+
+        <p class="address">Delivery address:</p>
+        <p>
+          <label for="house">House number:</label>
+          <input name="house" id="house" required />
+        </p>
+        <div id="houseError"></div>
+
+        <p>
+          <label for="street">Street:</label>
+          <input
+            name="street"
+            id="street"
+            required
+            placeholder="Enter street name..."
+          />
+        </p>
+        <div id="streetError"></div>
+        <p>
+          <label for="town">Town/City:</label>
+          <input
+            name="town"
+            id="town"
+            required
+            placeholder="Enter town/city..."
+          />
+        </p>
+        <div id="townError"></div>
+        <p>
+          <label for="postcode">Postcode:</label>
+          <input
+            name="postcode"
+            id="postcode"
+            required
+            placeholder="Enter postcode..."
+          />
+        </p>
+        <div id="postcodeError"></div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <ins><strong>Design your T-Shirt</strong></ins>
+        </legend>
+        <p>
+          <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" id="quantity" min="1" required />
+        </p>
+        <div id="quantityError"></div>
+        <p>
+          <label for="size">Select your size:</label>
+          <select name="size" id="size">
+            <option value="selectSize">Select Size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
+        </p>
+        <div id="sizeError"></div>
+
+        <p>
+          <span>Stripes:</span>
+          <label for="yes">Yes</label>
+          <input type="radio" name="stripes" value="yes" id="yes" />
+          <label for="no">No</label>
+          <input type="radio" name="stripes" value="no" id="no" />
+        </p>
+        <div id="stripesError"></div>
+
+        <p>
+          <label for="colour">Colour</label>
+          <select name="colour" id="colour">
+            <option value="selectColour">Select Colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="pink">Pink</option>
+          </select>
+        </p>
+        <div id="colourError"></div>
+      </fieldset>
+      <button type="submit"><strong>Send form</strong></button>
+    </form>
+  </body>
+</html>
